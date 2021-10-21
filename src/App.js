@@ -8,7 +8,7 @@ import NotFound from "./Pages/NotFound";
 function App() {
   return (
     <>
-      <Router basename={'/reading_guide'}>
+      <Router basename="/reading_guide">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
