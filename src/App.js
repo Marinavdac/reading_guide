@@ -8,13 +8,13 @@ import NotFound from "./Pages/NotFound";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={'/reading_guide'}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/books" component={Books} />
           <Route path="/links" component={Links} />
-          <Route path="*" component={NotFound} />
+          <Route component={NotFound} />
         </Switch>
       </Router>
     </>
