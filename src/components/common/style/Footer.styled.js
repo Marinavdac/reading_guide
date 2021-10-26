@@ -1,30 +1,41 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-background: linear-gradient(to top, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-padding: 100px 0 60px;
+  background: linear-gradient(to top, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  padding: 2px;
 
-ul {
-    list-style-type:none;
-}
+  img {
+    margin: 2px;
+    align-self: bottom;
+    size: 60px;
+  }
 
-ul li {
+  ul {
+    list-style-type: none;
+    padding: 5px;
+  }
+
+  ul li {
     margin-bottom: 20px;
-}
+    padding: 5px;
+  }
 
-p {
+  p {
     text-align: right;
-}
+  }
 
-@media(max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: 764px) {
     text-align: center;
-    ul {
-        padding: 0;
-    }
-    
-    p {
-        text-align: center;
-    }
-}
 
-`
+    ul {
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      align-self: left;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+`;

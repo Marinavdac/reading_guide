@@ -5,12 +5,16 @@ const GlobalStyle = createGlobalStyle`
 
 * {
     box-sizing: border-box;
+    font-size: 12px;
+    padding: 0;
+    margin:0;
+    
 }
 
 body {
-    font-family: 'Zen Antique Soft', serif;
+    font-family: 'Zen Kurenaido', sans-serif;
     color: black;
-    text-shadow: 1px 0 1px #000000;
+    text-shadow: 0 #000000;
 }
 
 
