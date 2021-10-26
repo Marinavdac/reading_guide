@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const Flex = styled.div`
+const StyledFlex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,4 +9,4 @@ const Flex = styled.div`
 `;
 
 
-export {Flex}
+export {StyledFlex}

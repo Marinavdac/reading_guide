@@ -9,19 +9,21 @@ function App() {
   return (
     <>
       <Switch>
-        <Route exact path="reading_guide/">
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="reading_guide/about">
+        <Route path="/about">
           <About />
         </Route>
-        <Route path="reading_guide/books">
+        <Route path="/books">
           <Books />
         </Route>
-        <Route path="reading_guide/links">
+        <Route path="/links">
           <Links />
         </Route>
-        <Route component={NotFound} />
+        <Route component={NotFound}>
+          <NotFound />
+        </Route>
       </Switch>
     </>
   );

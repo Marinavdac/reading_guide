@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import App from "./components/App";
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
     <>
-      <Router basename='/reading_guide'>
+      <Router basename={'/reading_guide'}>
         <App />
       </Router>
     </>
