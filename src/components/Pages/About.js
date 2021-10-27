@@ -5,7 +5,7 @@ import { Container } from 'components/common/Container';
 const About = () => {
   return (
     <>
-      
+      <Container>
         <StyledFlex>
           <h1>About</h1>
 
@@ -15,6 +15,7 @@ const About = () => {
             alt=""
           />
         </StyledFlex>
+        </Container>
       
     </>
   );

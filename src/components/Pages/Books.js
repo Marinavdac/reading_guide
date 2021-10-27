@@ -1,10 +1,11 @@
 import React from "react";
 import { StyledFlex } from "components/common/style";
+import { Container } from "components/common/Container";
 
 const Books = () => {
   return (
     <>
-      
+      <Container>
         <StyledFlex>
           <h1>Books and Reviews</h1>
 
@@ -14,7 +15,7 @@ const Books = () => {
             alt=""
           />
         </StyledFlex>
-     
+      </Container>
     </>
   );
 };

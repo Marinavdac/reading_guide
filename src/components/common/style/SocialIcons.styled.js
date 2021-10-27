@@ -1,26 +1,22 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const StyledSocialIcons = styled.div`
-display: flex;
-align-items: center;
-justify-content: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 
-li {
+  li {
     list-style: none;
-}
+    display: inline-flex;
+  }
 
-a {
-    border: 1px solid #fff;
-    border-radius: 50%50%;
-    color: #fff;
-    display:flex;
+  a {
+    color: white;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 5px;
-    height: 20px;
-    width: 20px;
-}
-
-`
-
+    justify-content: right;
+    margin-right: 0px;
+    height: 30px;
+    width: 30px;
+  }
+`;

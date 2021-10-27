@@ -1,11 +1,19 @@
+import styled from "styled-components";
+import { Footer } from "./Footer";
 import { NavBar } from "./index";
-import { StyledPageLayout } from "./style";
+
+export const StyledPageLayout = styled.div`
+background-color: white;
+height: 100vh;
+`;
+
 
 const PageLayout = ({ children }) => {
   return (
     <>
       <NavBar />
       <StyledPageLayout>{children}</StyledPageLayout>
+      <Footer />
     </>
   );
 };

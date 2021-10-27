@@ -1,41 +1,33 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-  background: linear-gradient(to top, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
-  padding: 2px;
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  width: 100%;
+  
+display: flex;
+display: inline-flex;
+align-items: center;
+justify-content: space-around;
 
-  img {
-    margin: 2px;
-    align-self: bottom;
-    size: 60px;
-  }
+li {
+    list-style: none;
+}
 
-  ul {
-    list-style-type: none;
-    padding: 5px;
-  }
+a {
+    color: white;
+    display:flex;
+    align-items: right;
+    justify-content: right;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+}
 
-  ul li {
-    margin-bottom: 20px;
-    padding: 5px;
-  }
+p {
+  text-align: right;
+}
 
-  p {
-    text-align: right;
-  }
-
-  @media (max-width: 764px) {
-    text-align: center;
-
-    ul {
-      padding: 3px;
-      display: flex;
-      flex-direction: column;
-      align-self: left;
-    }
-
-    p {
-      text-align: center;
-    }
-  }
+img {
+  margin-left: 1px;
+}
 `;
