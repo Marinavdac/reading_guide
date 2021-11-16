@@ -1,24 +1,34 @@
-import { NavLink } from "react-router-dom";
+import { Link as ReactRouterLink, useLocation } from "react-router-dom";
+import styled from 'styled-components';
 import { StyledNavBar } from "./style";
 import { FaSearch } from "react-icons/fa";
 import { BsBookmarkStarFill } from "react-icons/bs";
 
+const NavMenu = styled(ReactRouterLink)`
+font-weight: ${props => props.isActive ? 'bold' : 'normal'};
+text-decoration: ${props => props.isActive ? 'underline dotted' : 'none'};
+`; 
+
+
 const NavBar = () => {
+  
+  const {pathname} = useLocation();
+
   return (
     <>
       <StyledNavBar>
-        <NavLink to="/">
+        <NavMenu to="/">
           <BsBookmarkStarFill />
-        </NavLink>
-        <NavLink exact to="/">
+        </NavMenu>
+        <NavMenu to="/" isActive={pathname === '/'}>
           Home
-        </NavLink>
-        <NavLink to="/about"> About </NavLink>
-        <NavLink to="/books"> Books </NavLink>
-        <NavLink to="/links"> Links </NavLink>
-        <NavLink to="/">
+        </NavMenu>
+        <NavMenu to="/about" isActive={pathname === '/about'}> About </NavMenu>
+        <NavMenu to="/books" isActive={pathname === '/books'}> Books </NavMenu>
+        <NavMenu to="/links" isActive={pathname === '/links'}> Links </NavMenu>
+        <NavMenu to="/">
           <FaSearch />
-        </NavLink>
+        </NavMenu>
       </StyledNavBar>
     </>
   );

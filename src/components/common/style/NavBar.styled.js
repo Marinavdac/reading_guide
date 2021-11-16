@@ -27,8 +27,7 @@ const StyledNavBar = styled.div`
     margin-left: 0;
     height: 80px;
     width: 84px;
-    text-decoration: none;
-  }
+    }
 `;
 
 export { StyledNavBar };

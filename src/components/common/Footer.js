@@ -8,9 +8,9 @@ const Footer = function () {
     <>
       <Container footer>
         <StyledFooter>
-          <a>
+          <li>
             <img src={logo} alt="" />
-          </a>
+          </li>
           <ul>
             <li>
               <h3>
@@ -24,6 +24,6 @@ const Footer = function () {
       </Container>
     </>
   );
-};
+}; 
 
 export { Footer };

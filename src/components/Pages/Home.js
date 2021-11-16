@@ -1,7 +1,7 @@
 import { Container } from "components/common/Container";
 
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import bkgImg from "../imgs/cover-lg.jpg";
 
 const MainBackground = styled.div`
@@ -27,7 +27,7 @@ const TextArea = styled.h1`
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.1); 
+    transform: scale(1.0); 
   }
 
 `;

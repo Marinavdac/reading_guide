@@ -19,11 +19,6 @@ align-items: center;
 & ul > {
   flex: 1;
 }
-
-
-
 `
-
-
 
 export {StyledFlex, Flex}

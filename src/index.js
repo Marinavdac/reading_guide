@@ -11,7 +11,7 @@ ReactDOM.render(
       <Router basename="/reading_guide">
         <GlobalStyle />
         <PageLayout>
-          <App />
+          <App /> 
         </PageLayout>
       </Router>
     </>
